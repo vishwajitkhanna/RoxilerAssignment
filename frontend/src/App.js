@@ -46,7 +46,7 @@ function App() {
     const initializeDb = async () => {
       try {
         await API.initializeDb();
-        fetchData(); // Fetch data after initializing the DB
+        fetchData();
       } catch (error) {
         console.log("Error while initializing DB:", error);
       }
